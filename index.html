@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Sense of Wonder!</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: linear-gradient(90deg, #ffde59, #ff914d); /* Set linear gradient background */
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+            padding: 20px;
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        header {
+            color:#003376;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+
+        }
+
+        h1 {
+            color: #003376;
+            font-size: 3em;
+            text-shadow: 1px 1px 2px #2980b9;
+        }
+
+        .welcome-message {
+            font-size: 1.5em;
+            color: #003376;
+            margin: 20px 0;
+        }
+
+        .activity-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .activity-card {
+            
+            border: 2px solid #27ae60;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            width: 200px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .activity-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .activity-image {
+            width: 80px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            margin-top: 20px;
+            
+            border-radius: 10px;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        footer p {
+            color: #003376; /* Black footer text to contrast with white background */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="sow.jpg" alt="Sense of Wonder Logo" style="height: 50px; vertical-align: middle; margin-right: 10px;">
+        <h1 style="display: inline-block; vertical-align: middle;">SOW..!!</h1>
+       
+    </header>
+
+    <main>
+        <div class="welcome-message">Welcome to your fun and relaxing space!</div>
+
+        <p> Nutruting young minds by planning seeds of balance. Here, you'll find tools and activities to help manage emotions, talk about feelings, and build resilience. We invite families, parents, teachers, and caregivers to join in, creating a space for growth and healing together.</p>
+
+        <h2>Explore Calming Techniques and Tools!</h2>
+        <div class="activity-list">
+            <div class="activity-card" onclick="location.href='calming-techniques.html'">
+                <img src="index1.jpg" alt="Calming Techniques" class="activity-image">
+                <h3>Calming Techniques and Tools</h3>
+                <p>A toolbox offering guided breathing exercises, short yoga routines, and techniques for emotional regulation.</p>
+            </div>
+            <div class="activity-card" onclick="location.href='mental-health-toolbox.html'">
+                <img src="index2.jpg" alt="Mental Health Toolbox" class="activity-image">
+                <h3>Mental Health Toolbox</h3>
+                <p>A collection of resources including hotline numbers for mental health support and coping strategies.</p>
+            </div>
+            <div class="activity-card" onclick="location.href='sel-modules.html'">
+                <img src="index3.jpg" alt="SEL Modules" class="activity-image">
+                <h3>Social and Emotional Learning Modules</h3>
+                <p>Activities designed to promote friendship-building and social skills.</p>
+            </div>
+            <div class="activity-card" onclick="location.href='mood-tracking.html'">
+                <img src="index4.jpg" alt="Mood Tracking" class="activity-image">
+                <h3>Mood and Emotion Tracking</h3>
+                <p>A feature that allows children to log their feelings and reflect on their emotional states over time.</p>
+            </div>
+            <div class="activity-card" onclick="location.href='personalized-profiles.html'">
+                <img src="index5.jpg" alt="Personalized Profiles" class="activity-image">
+                <h3>Personalized Profile and Avatars</h3>
+                <p>Create a unique avatar and personalized profile for a more engaging experience.</p>
+            </div>
+            <div class="activity-card" onclick="location.href='daily-reminders.html'">
+                <img src="index6.jpg" alt="Daily Reminders" class="activity-image">
+                <h3>Daily Reminders and Wellness Prompts</h3>
+                <p>Gentle reminders to check in on mental health and complete calming exercises.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 SOW</p>
+    </footer>
+</body>
+</html>
+
